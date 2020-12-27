@@ -1,16 +1,21 @@
 import React from 'react';
-import './App.css';
-import Modal from './Components/Modal';
-import ModalProvider from './Contexts/ModalProvider';
+import Header from './components/Header';
+import Search from './components/Search';
+import Directory from './components/Directory';
+import CardPanel from './components/CardPanel';
+
 
 /**
  * @return {null}
  */
 function App() {
   return (
-    <ModalProvider>
-      <Modal />
-    </ModalProvider>
+    <>
+      <Header></Header>
+      <Search></Search>
+      <Directory></Directory>
+      <CardPanel></CardPanel>
+      </>
   );
 }
 
